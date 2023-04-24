@@ -10,7 +10,7 @@ config:
 automations:
   assign_code_editors:
       if:
-        - {{ length == 60 }}
+        - true
       run:
         - action: add-reviewers@v1
           args:
