@@ -10,6 +10,6 @@
 //another
 // testing rules
 //another
-// t
+//
 // testing rules
 // testing rule
