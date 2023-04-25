@@ -12,4 +12,4 @@
 //another
 //
 // testing rules
-// testing rule
+// testing
