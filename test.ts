@@ -12,4 +12,3 @@
 //another
 //
 // testing rules
-// test
