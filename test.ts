@@ -5,6 +5,3 @@
 //another
 //another
 //another
-//another// testing
-// testing rules
-//
