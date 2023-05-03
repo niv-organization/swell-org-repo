@@ -6,7 +6,6 @@
 //another
 //another
 // testing rules
-// testing rules
 //another//  rules
 //another
 // testing rules
