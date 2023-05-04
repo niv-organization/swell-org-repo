@@ -1,7 +1,7 @@
 // testing rules
 // testing rules
 //another//  rules
-//another
+//
 //another
 //  rules
 // testing rules
