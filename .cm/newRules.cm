@@ -1,0 +1,21 @@
+# -*- mode: yaml -*-
+
+manifest:
+  version: 1.0
+ 
+config:
+  admin:
+    users: ['nivSwisa1']
+
+automations:
+  add_comment:
+      if:
+        - true
+      run:
+        - action: add-comment@v1
+          args:
+            comment: |
+              'niv new rules'
+calc:
+  owners: {{ repo | rankByGitBlame(gt=25) }}
+
