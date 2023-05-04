@@ -2,18 +2,9 @@
 //another
 // testing rules
 //another// testing rules
-//another
-//another
-//another
+//
+//  rules
 // testing rules
-//another
-// testing rules
-//another// testing rules
-//another
-// testing rules
-//another
-// testing rules
-
 // testing rules
 // testing rules
 // testing rules
