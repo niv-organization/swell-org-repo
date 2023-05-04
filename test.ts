@@ -6,4 +6,4 @@
 //another testing rules
 //  rules
 //another
-// testing rules
+// testing ru
