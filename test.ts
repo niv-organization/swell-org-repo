@@ -1,4 +1,3 @@
-// testing rules
 //
 // testing rules
 //another
