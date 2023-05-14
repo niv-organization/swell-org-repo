@@ -7,7 +7,6 @@
 //another
 //another
 // testing rules
-// testing rules
 // testing 
 
 // testing rules
