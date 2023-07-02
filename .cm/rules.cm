@@ -12,7 +12,7 @@ automations:
       if:
         - true
       run:
-        - action: require-reviewers@v1
+        - action: add-reviewers@v1
           args:
             reviewers: ['saharavishag']
   assign_code_editors:
@@ -34,7 +34,7 @@ automations:
         - action: add-comment@v1
           args:
             comment: |
-              'niv rules'
+              'add-comment automation'
 
 calc:
   owners: {{ repo | rankByGitBlame(gt=25) }}
