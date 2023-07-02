@@ -8,6 +8,13 @@ config:
     users: ['nivSwisa1']
 
 automations:
+  senior_review:
+      if:
+        - true
+      run:
+        - action: require-reviewers@v1
+          args:
+            reviewers: ['saharavishag']
   assign_code_editors:
       if:
         - true
