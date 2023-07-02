@@ -14,15 +14,11 @@ automations:
       run:
         - action: add-reviewers@v1
           args:
-            reviewers: [linear-b/team-flare]
+            reviewers: [linear-b/team-flare, 'avishagsahar']
   assign_code_editors:
       if:
         - true
       run:
-        - action: add-reviewers@v1
-          args:
-            reviewers: {{ calc.owners }}
-
         - action: add-comment@v1
           args:
             comment: |
@@ -35,6 +31,3 @@ automations:
           args:
             comment: |
               'add-comment automation'
-
-calc:
-  owners: {{ repo | rankByGitBlame(gt=25) }}
