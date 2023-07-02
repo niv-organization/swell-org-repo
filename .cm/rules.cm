@@ -46,6 +46,8 @@ automations:
 calc:
   owners: {{ repo | rankByGitBlame(gt=25) }}
 is:
+  formatting: {{ source.diff.files | isFormattingChange }}
   docs: {{ files | allDocs }}
+  tests: {{ files | allTests }}
   images: {{ files | allImages }}
 
