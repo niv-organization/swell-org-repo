@@ -20,6 +20,14 @@ automations:
           args:
             comment: |
               'comment + reviewer actions'
+ senior_review:
+    if:
+      - true
+    run:
+      - action: require-reviewers@v1
+        args:
+          reviewers: ['saharavishag']
+
   run_e2e_tests:
       if:
         - true
