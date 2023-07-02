@@ -20,14 +20,6 @@ automations:
           args:
             comment: |
               'comment + reviewer actions'
- senior_review:
-    if:
-      - true
-    run:
-      - action: require-reviewers@v1
-        args:
-          reviewers: ['saharavishag']
-
   run_e2e_tests:
       if:
         - true
@@ -44,6 +36,13 @@ automations:
           args:
             labels: ['safe-changes']
         - action: approve@v1
+   senior_review:
+      if:
+        - true
+      run:
+        - action: require-reviewers@v1
+          args:
+            reviewers: ['saharavishag']
 calc:
   owners: {{ repo | rankByGitBlame(gt=25) }}
 is:
