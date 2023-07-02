@@ -14,7 +14,7 @@ automations:
       run:
         - action: add-reviewers@v1
           args:
-            reviewers: [linear-b/team-flare, 'avishagsahar']
+            reviewers: [linear-b/team-flare, 'saharavishag']
   assign_code_editors:
       if:
         - true
