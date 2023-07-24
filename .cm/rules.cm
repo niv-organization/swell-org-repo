@@ -31,3 +31,24 @@ automations:
           args:
             comment: |
               'add-comment automation'
+  small_change:
+      if:
+        - {{ source.diff.files | isFormattingChange }}
+      run:
+        - action: approve@v1
+  small_change_merge:
+      if:
+        - {{ files | length == 2 }}
+      run:
+        - action: merge@v1
+          args:
+            rebase_on_merge: true
+  request_changes_more_then_3_files:
+        if:
+          - {{ files | length == 3 }}
+        run:
+          - action: request-changes@v1
+            args:
+              comment: |
+                'You have uinstead.'
+
